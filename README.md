@@ -12,7 +12,7 @@ That's what this repo is -- a learning exercise for gem development. <3
 ## Local
 
 If you want to play around with this repo locally,
-you need only:
+you need to:
 
 *   Have ruby installed
 *   Clone this repo && cd into the project directory
