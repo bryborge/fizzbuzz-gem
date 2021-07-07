@@ -16,7 +16,7 @@ describe FizzBuzz do
     expect(@fb).to include('Buzz')
   end
 
-  it 'should replace all numbers divisibe by 3 and 5 with "FizzBuzz"' do
+  it 'should replace all numbers divisible by 3 and 5 with "FizzBuzz"' do
     expect(@fb).to include('FizzBuzz')
   end
 end
