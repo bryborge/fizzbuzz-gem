@@ -1,29 +1,38 @@
 # Fizz Buzz Gem
 
-This is a gem.
-It's a simple one.
-My first,
-in fact!
-I've written ruby for years,
-but I realized it was mostly rails or one-off scripts,
-and I wanted to discover how to make an actual gem.
-That's what this repo is -- a learning exercise for gem development. <3
+This is one of many implementations of Fizz Buzz as a Ruby Gem.
 
-## Local
+## Getting Started
 
-If you want to play around with this repo locally,
-you need to:
+These instructions will walk you through the process of setting up this project on a development machine.
 
-*   Have ruby installed
-*   Clone this repo && cd into the project directory
-*   Build the gem
-    *   `gem build fizzbuzz.gemspec`
-*   Install the gem
-    *   `gem install -l fizzbuzz`
+### Prerequisites
 
-### irb
+*   Ruby
 
-Hop into an IRB console and check things out.
+### Installing
+
+1.  Clone the project (replacing `<my-project>` with the desired project name).
+
+    ```sh
+    git clone git@github.com:sonofborge/fizzbuzz-gem.git
+    ```
+
+2.  Build the gem
+
+    ```sh
+    gem build fizzbuzz.gemspec
+    ```
+
+3.  Install the gem
+
+    ```sh
+    gem install -l fizzbuzz
+    ```
+
+## Usage
+
+To interact with the gem, hop into an IRB console and check it out.
 
 ```ruby
 require 'fizzbuzz'
@@ -35,4 +44,19 @@ arr.fizz_buzz
 # => [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
 range.fizz_buzz
 # => [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+```
+## Testing
+
+Tests can be run either with RSpec or Test Unit which ships with Ruby.
+
+### RSpec
+
+```sh
+bundle exec rspec spec
+```
+
+### TestUnit
+
+```sh
+ruby ./spec/test_unit/fizzbuzz_test.rb
 ```
